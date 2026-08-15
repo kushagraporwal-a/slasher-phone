@@ -1,0 +1,66 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+}
+
+.hud {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 12px 16px;
+  background: #10141f;
+  border: 1px solid #232838;
+  border-radius: 10px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #9aa4bb;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ef4444;
+}
+
+.status--connected .status-dot {
+  background: #34d399;
+}
+
+.calibrate-button {
+  padding: 8px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #05070c;
+  background: #38bdf8;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.calibrate-button:disabled {
+  background: #2a3244;
+  color: #6b7690;
+  cursor: not-allowed;
+}
+
+.score {
+  margin-left: auto;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.game-canvas {
+  display: block;
+  border-radius: 10px;
+  border: 1px solid #232838;
+  background: #0b0f1a;
+}
